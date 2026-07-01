@@ -1,0 +1,946 @@
+{
+  "id": "ac-2026",
+  "title": "Anthrocon 2026 (Unofficial)",
+  "homeURL": "/",
+  "logoURL": "https://www.anthrocon.org/logo.min.7c7be5dd1b2e70ee02e132f3953a4f06.svg",
+  "description": "Unofficial Anthrocon 2026 schedule. Best effort: map/dealers not included, and tag ontology may not match.\n\n_Try adding this page to your home screen to use it even without an internet connection._",
+  "binMinutes": 30,
+  "timeZone": "America/New_York",
+  "start": "2026-07-02T10:00:00",
+  "end": "2026-07-05T22:00:00",
+  "items": ["/ac-2026-demo/ac-events.json"],
+  "pages": [
+    {
+      "id": "events",
+      "title": "Events",
+      "description": "View the schedule of events and panels.",
+      "onlyType": "event",
+      "excludeTags": ["gantt", "escape-room"],
+      "views": [
+        {
+          "id": "daily-agenda",
+          "title": "Daily Agenda",
+          "type": "daily-agenda",
+          "enableFeatures": [
+            "search",
+            "past-events-filter",
+            "bookmarked-filter",
+            "tag-filter",
+            "sync",
+            "share",
+            "export"
+          ]
+        },
+        {
+          "id": "full-agenda",
+          "title": "Full Agenda",
+          "type": "full-agenda",
+          "enableFeatures": [
+            "search",
+            "past-events-filter",
+            "bookmarked-filter",
+            "tag-filter",
+            "sync",
+            "share",
+            "export"
+          ]
+        },
+        {
+          "id": "catalog",
+          "title": "Catalog",
+          "type": "catalog",
+          "enableFeatures": [
+            "search",
+            "bookmarked-filter",
+            "tag-filter",
+            "sync",
+            "share",
+            "export"
+          ],
+          "showPastEvents": true
+        },
+        {
+          "id": "tags",
+          "title": "Tags",
+          "type": "tags",
+          "enableFeatures": [
+            "search",
+            "bookmarked-filter",
+            "tag-filter",
+            "sync",
+            "share",
+            "export"
+          ],
+          "showPastEvents": true
+        }
+      ]
+    },
+    {
+      "id": "hours",
+      "title": "Hours",
+      "description": "View the hours of operation for Registration, the Dealers' Room, and more.",
+      "requireTags": ["gantt"],
+      "views": [
+        {
+          "id": "gantt",
+          "title": "Hours",
+          "type": "gantt",
+          "enableFeatures": [],
+          "locations": [
+            "DLCC",
+            "Rooftop",
+            "Registration",
+            "Dealers Room",
+            "Art Show",
+            "Con Ops",
+            "Westin Gaming"
+          ],
+          "showPastEvents": true
+        }
+      ]
+    }
+  ],
+  "tags": [
+    { "tag": "instructional", "title": "Instructional" },
+    { "tag": "charity", "title": "Charity" },
+    { "tag": "puppetry", "title": "Puppetry" },
+    { "tag": "tabletop-gaming", "title": "Tabletop Gaming" },
+    { "tag": "performance", "title": "Performance" },
+    { "tag": "social", "title": "Social" },
+    { "tag": "fursuiting", "title": "Fursuiting" },
+    { "tag": "cruise", "title": "Cruise" },
+    { "tag": "fandom", "title": "Fandom" },
+    { "tag": "mature", "title": "Mature" },
+    { "tag": "nightly-dance", "title": "Nightly Dance" },
+    { "tag": "writing", "title": "Writing" },
+    { "tag": "spec-interest", "title": "Spec. Interest" },
+    { "tag": "music", "title": "Music" },
+    { "tag": "art", "title": "Art" },
+    { "tag": "gameshow", "title": "Gameshow" },
+    { "tag": "comedy", "title": "Comedy" },
+    { "tag": "dance", "title": "Dance" },
+    { "tag": "meet-greet", "title": "Meet & Greet" },
+    { "tag": "con-event", "title": "Con Event" },
+    { "tag": "video-gaming", "title": "Video Gaming" }
+  ],
+  "tagIndicators": [
+    {
+      "tags": ["mature"],
+      "label": "18+"
+    }
+  ],
+  "locationAddresses": [
+    [
+      [],
+      {
+        "address": "402 N High St",
+        "city": "Columbus",
+        "state": "OH",
+        "country": "US",
+        "postal": "43215"
+      }
+    ]
+  ],
+  "map": {
+    "objects": [
+      {
+        "id": "lower",
+        "type": "level",
+        "title": "Lower Level",
+        "url": "/test-schedule-2026/lower.svg"
+      },
+      {
+        "id": "lobby",
+        "type": "level",
+        "title": "Lobby",
+        "url": "/test-schedule-2026/lobby.svg"
+      },
+      {
+        "id": "2f",
+        "type": "level",
+        "title": "2F",
+        "url": "/test-schedule-2026/2f.svg"
+      },
+      {
+        "id": "3f",
+        "type": "level",
+        "title": "3F",
+        "url": "/test-schedule-2026/3f.svg"
+      },
+      {
+        "id": "4f",
+        "type": "level",
+        "title": "4F",
+        "url": "/test-schedule-2026/4f.svg"
+      },
+      {
+        "id": "5f",
+        "type": "level",
+        "title": "5F",
+        "url": "/test-schedule-2026/5f.svg"
+      }
+    ],
+    "defaultLevel": "lobby",
+    "width": 4224,
+    "height": 5280,
+    "layers": [
+      {
+        "id": "text",
+        "title": "Text"
+      },
+      {
+        "id": "detail",
+        "title": "Detail"
+      },
+      {
+        "id": "landmark",
+        "title": "Landmarks"
+      },
+      {
+        "id": "vendor",
+        "title": "Dealer/Artist Info"
+      }
+    ],
+    "flagToggles": [
+      {
+        "id": "aa",
+        "title": "Sat/Sun Artists' Alley"
+      }
+    ],
+    "locations": [
+      {
+        "id": "burkhart",
+        "title": "Emerson Burkhart",
+        "aliases": ["Burkhart", "Burkhart : Program"],
+        "excludeFlags": ["aa"],
+        "level": "lower"
+      },
+      {
+        "id": "king",
+        "title": "Robert King",
+        "aliases": ["King", "King : Board Games", "Board Games"],
+        "level": "lobby"
+      },
+      {
+        "id": "hopkins",
+        "title": "Edna Boies Hopkins",
+        "aliases": ["Hopkins", "Hopkins : Video Games", "Video Games"],
+        "level": "lobby"
+      },
+      {
+        "id": "kamau",
+        "title": "Kojo Kamau Junior Ballroom",
+        "aliases": ["Kamau", "Kamau : Main Stage", "Main Stage"],
+        "level": "4f"
+      },
+      {
+        "id": "west",
+        "title": "Pheoris West Room",
+        "aliases": ["West", "West : Second Stage", "Second Stage"],
+        "level": "3f"
+      },
+      {
+        "id": "johnson",
+        "title": "Roman Johnson Room",
+        "aliases": ["Johnson", "Johnson : Panel Room 1", "Panel Room 1"],
+        "level": "3f"
+      },
+      {
+        "id": "massey-a",
+        "title": "Charles Massey Room A",
+        "aliases": ["Massey A", "Massey A : Panel Room 2", "Panel Room 2"],
+        "level": "3f"
+      },
+      {
+        "id": "massey-bc",
+        "title": "Charles Massey Room BC",
+        "aliases": ["Massey BC", "Massey BC : Panel Room 3", "Panel Room 3"],
+        "level": "3f"
+      },
+      {
+        "id": "griffith",
+        "title": "Denny Griffith Boardroom",
+        "aliases": ["Griffith", "Griffith : Meeting Room 1", "Meeting Room 1"],
+        "level": "3f"
+      },
+      {
+        "id": "frey",
+        "title": "Erwin Frey Room",
+        "aliases": ["Frey", "Frey : Meeting Room 2", "Meeting Room 2"],
+        "level": "3f"
+      },
+      {
+        "id": "spark-bar",
+        "title": "Spark Bar",
+        "aliases": ["Spark Bar : Hilton Bar"],
+        "level": "2f"
+      },
+      {
+        "id": "robinson",
+        "title": "Aminah Robinson Grand Ballroom",
+        "aliases": ["Robinson", "Robinson : Tower 402"],
+        "level": "5f"
+      },
+      {
+        "id": "tibor",
+        "title": "Alfred Tibor Room",
+        "aliases": ["Tibor", "Tibor : Escape Room", "Furry Logic"],
+        "level": "3f"
+      },
+      {
+        "id": "b-1",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["B 1"]
+      },
+      {
+        "id": "b-2",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["B 2"]
+      },
+      {
+        "id": "b-3",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["B 3"]
+      },
+      {
+        "id": "dd-1",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 1"]
+      },
+      {
+        "id": "dd-2",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 2"]
+      },
+      {
+        "id": "dd-3",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 3"]
+      },
+      {
+        "id": "dd-4",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 4"]
+      },
+      {
+        "id": "dd-5",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 5"]
+      },
+      {
+        "id": "dd-6a",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 6a"]
+      },
+      {
+        "id": "dd-6b",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 6b"]
+      },
+      {
+        "id": "dd-7",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 7"]
+      },
+      {
+        "id": "dd-8",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 8"]
+      },
+      {
+        "id": "dd-9",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 9"]
+      },
+      {
+        "id": "dd-10",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 10"]
+      },
+      {
+        "id": "dd-11",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 11"]
+      },
+      {
+        "id": "dd-12",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 12"]
+      },
+      {
+        "id": "dd-13",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 13"]
+      },
+      {
+        "id": "dd-14",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["MM 14"]
+      },
+      {
+        "id": "dd-15",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 15"]
+      },
+      {
+        "id": "dd-16",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 16"]
+      },
+      {
+        "id": "dd-17a",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 17a"]
+      },
+      {
+        "id": "dd-17b",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 17b"]
+      },
+      {
+        "id": "dd-18",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 18"]
+      },
+      {
+        "id": "dd-19a",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 19a"]
+      },
+      {
+        "id": "dd-19b",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 19b"]
+      },
+      {
+        "id": "dd-20",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 20"]
+      },
+      {
+        "id": "dd-21",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 21"]
+      },
+      {
+        "id": "dd-22",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 22"]
+      },
+      {
+        "id": "dd-23",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 23"]
+      },
+      {
+        "id": "dd-24",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 24"]
+      },
+      {
+        "id": "dd-25",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 25"]
+      },
+      {
+        "id": "dd-26",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 26"]
+      },
+      {
+        "id": "dd-27",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 27"]
+      },
+      {
+        "id": "dd-28",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 28"]
+      },
+      {
+        "id": "dd-29",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 29"]
+      },
+      {
+        "id": "dd-30",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 30"]
+      },
+      {
+        "id": "dd-31",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 31"]
+      },
+      {
+        "id": "dd-32",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 32"]
+      },
+      {
+        "id": "dd-33",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 33"]
+      },
+      {
+        "id": "dd-34",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 34"]
+      },
+      {
+        "id": "dd-35",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 35"]
+      },
+      {
+        "id": "dd-36",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 36"]
+      },
+      {
+        "id": "dd-37",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 37"]
+      },
+      {
+        "id": "dd-38",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 38"]
+      },
+      {
+        "id": "dd-39",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 39"]
+      },
+      {
+        "id": "dd-40",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 40"]
+      },
+      {
+        "id": "dd-41",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 41"]
+      },
+      {
+        "id": "dd-42",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 42"]
+      },
+      {
+        "id": "dd-43",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 43"]
+      },
+      {
+        "id": "dd-44",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 44"]
+      },
+      {
+        "id": "dd-45",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 45"]
+      },
+      {
+        "id": "dd-46",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 46"]
+      },
+      {
+        "id": "dd-47",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 47"]
+      },
+      {
+        "id": "dd-48",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 48"]
+      },
+      {
+        "id": "dd-49",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 49"]
+      },
+      {
+        "id": "dd-50",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 50"]
+      },
+      {
+        "id": "dd-51",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 51"]
+      },
+      {
+        "id": "dd-52",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 52"]
+      },
+      {
+        "id": "dd-53",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 53"]
+      },
+      {
+        "id": "dd-54",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 54"]
+      },
+      {
+        "id": "dd-55",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 55"]
+      },
+      {
+        "id": "dd-56",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 56"]
+      },
+      {
+        "id": "dd-57",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 57"]
+      },
+      {
+        "id": "dd-58",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 58"]
+      },
+      {
+        "id": "dd-59",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 59"]
+      },
+      {
+        "id": "dd-60",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["DD 60"]
+      },
+      {
+        "id": "al-1",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 1", "Alcove 1"]
+      },
+      {
+        "id": "al-2",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 2", "Alcove 2"]
+      },
+      {
+        "id": "al-3",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 3", "Alcove 3"]
+      },
+      {
+        "id": "al-4",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 4", "Alcove 4"]
+      },
+      {
+        "id": "al-5",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 5", "Alcove 5"]
+      },
+      {
+        "id": "al-6",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 6", "Alcove 6"]
+      },
+      {
+        "id": "al-7",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 7", "Alcove 7"]
+      },
+      {
+        "id": "al-8",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 8", "Alcove 8"]
+      },
+      {
+        "id": "al-9",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 9", "Alcove 9"]
+      },
+      {
+        "id": "al-10",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 10", "Alcove 10"]
+      },
+      {
+        "id": "al-11",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 11", "Alcove 11"]
+      },
+      {
+        "id": "al-12",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 12", "Alcove 12"]
+      },
+      {
+        "id": "al-13",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AL 13", "Alcove 13"]
+      },
+      {
+        "id": "aa-1",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 1"]
+      },
+      {
+        "id": "aa-2",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 2"]
+      },
+      {
+        "id": "aa-3",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 3"]
+      },
+      {
+        "id": "aa-4",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 4"]
+      },
+      {
+        "id": "aa-5",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 5"]
+      },
+      {
+        "id": "aa-6",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 6"]
+      },
+      {
+        "id": "aa-7",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 7"]
+      },
+      {
+        "id": "aa-8",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 8"]
+      },
+      {
+        "id": "aa-9",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 9"]
+      },
+      {
+        "id": "aa-10",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 10"]
+      },
+      {
+        "id": "aa-11",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 11"]
+      },
+      {
+        "id": "aa-12",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 12"]
+      },
+      {
+        "id": "aa-13",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 13"]
+      },
+      {
+        "id": "aa-14",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 14"]
+      },
+      {
+        "id": "aa-15",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 15"]
+      },
+      {
+        "id": "aa-16",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 16"]
+      },
+      {
+        "id": "aa-17",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 17"]
+      },
+      {
+        "id": "aa-18",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 18"]
+      },
+      {
+        "id": "aa-19",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 19"]
+      },
+      {
+        "id": "aa-20",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 20"]
+      },
+      {
+        "id": "aa-21",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 21"]
+      },
+      {
+        "id": "aa-22",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 22"]
+      },
+      {
+        "id": "aa-23",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 23"]
+      },
+      {
+        "id": "aa-24",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 24"]
+      },
+      {
+        "id": "aa-25",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 25"]
+      },
+      {
+        "id": "aa-26",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 26"]
+      },
+      {
+        "id": "aa-27",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 27"]
+      },
+      {
+        "id": "aa-28",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 28"]
+      },
+      {
+        "id": "aa-29",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 29"]
+      },
+      {
+        "id": "aa-30",
+        "level": "lower",
+        "zoomScale": 2,
+        "aliases": ["AA 30"]
+      }
+    ]
+  }
+}

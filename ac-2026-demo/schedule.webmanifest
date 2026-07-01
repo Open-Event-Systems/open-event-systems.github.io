@@ -1,0 +1,53 @@
+{
+  "short_name": "AC 2026",
+  "name": "Anthrocon 2026",
+  "description": "The unofficial Anthrocon 2026 schedule.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffbf00",
+  "background_color": "#13171f",
+  "icons": [
+    {
+      "src": "images/icon-192x192-maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icon-512x512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/ss-mobile-1.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x693",
+      "form_factor": "narrow",
+      "label": "Schedule"
+    },
+    {
+      "src": "images/ss-mobile-2.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x693",
+      "form_factor": "narrow",
+      "label": "Map"
+    },
+    {
+      "src": "images/ss-desktop-1.jpg",
+      "type": "image/jpeg",
+      "sizes": "854x480",
+      "form_factor": "wide",
+      "label": "Schedule"
+    },
+    {
+      "src": "images/ss-desktop-2.jpg",
+      "type": "image/jpeg",
+      "sizes": "854x480",
+      "form_factor": "wide",
+      "label": "Map"
+    }
+  ]
+}

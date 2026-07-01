@@ -1,0 +1,438 @@
+/* fira-sans-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/fira-sans-v18-latin_latin-ext-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fira-sans-italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/fira-sans-v18-latin_latin-ext-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fira-sans-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/fira-sans-v18-latin_latin-ext-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fira-sans-700italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/fira-sans-v18-latin_latin-ext-700italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v20-latin_latin-ext-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/inter-v20-latin_latin-ext-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v20-latin_latin-ext-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/inter-v20-latin_latin-ext-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html,
+body {
+  /* background-color: #13171f; */
+  background-color: hsl(220, 15%, 15%);
+  --mantine-color-body: hsl(220, 15%, 15%);
+}
+
+.MainLayout-header {
+  --header-min-height: 150px;
+  background-color: #13171f;
+}
+
+.MainLayout-logo {
+  width: 96px;
+  filter: drop-shadow(2px 2px 4px#000);
+}
+
+.MainLayout-title {
+  text-shadow: #000 2px 2px 4px;
+  /* -webkit-text-stroke: #000 1px; */
+  color: #fff;
+}
+
+#schedule > .preload-content {
+  background-color: #13171f;
+}
+
+.MainLayout-container,
+.Loading-container {
+  background-color: #13171f;
+}
+
+.MainLayout-footer {
+  /* background-color: hsla(0, 0%, 0%, 0.45); */
+  /* background-color: hsla(0, 0%, 0%, 0.6); */
+  background-color: hsl(220, 15%, 10%);
+}
+
+.Calendar-times {
+  min-width: 4rem;
+}
+
+/* Tag colors */
+
+/*
+ * Wong color palette:
+ * https://davidmathlogic.com/colorblind/#%23000000-%23E69F00-%2356B4E9-%23009E73-%23F0E442-%230072B2-%23D55E00-%23CC79A7
+ */
+
+#schedule {
+  --color-1: #ffffff;
+  --color-2: #e69f00;
+  --color-3: #56b4e9;
+  --color-4: #009e73;
+  --color-5: #f0e442;
+  --color-6: #0072b2;
+  --color-7: #d55e00;
+  --color-8: #cc79a7;
+  --text-1: #000;
+  --text-2: #000;
+  --text-3: #000;
+  --text-4: #fff;
+  --text-5: #000;
+  --text-6: #fff;
+  --text-7: #fff;
+  --text-8: #fff;
+}
+
+#schedule .Pills-pillBody::before {
+  text-shadow: #333 1px 1px 3px;
+}
+
+#schedule .Pills-pillBody::after {
+  text-shadow: #333 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-art {
+  --pill-background: var(--color-4);
+  --pill-color: var(--text-4);
+  --pill-before: "🎨 ";
+}
+
+#schedule .Pill-item-tag-art .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-writing {
+  --pill-background: var(--color-4);
+  --pill-color: var(--text-4);
+  --pill-before: "✏️ ";
+}
+
+#schedule .Pill-item-tag-writing .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-instructional {
+  --pill-background: var(--color-3);
+  --pill-color: var(--text-3);
+  --pill-before: "🎓 ";
+}
+
+#schedule .Pill-item-tag-art.Pill-item-tag-instructional .Pills-pillBody,
+#schedule .Pill-item-tag-art.Pill-item-tag-spec-interest .Pills-pillBody,
+#schedule
+  .Pill-item-tag-instructional.Pill-item-tag-spec-interest
+  .Pills-pillBody {
+  text-shadow: none;
+}
+
+#schedule
+  .Pill-item-tag-art.Pill-item-tag-instructional.Pill-item-tag-fursuiting
+  .Pills-pillBody,
+#schedule
+  .Pill-item-tag-art.Pill-item-tag-instructional.Pill-item-tag-performance
+  .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-mature .Pills-pillIndicator::before {
+  background-color: #ff0000;
+}
+
+#schedule .Pill-item-tag-spec-interest {
+  --pill-background: var(--color-3);
+  --pill-color: var(--text-3);
+  --pill-before: "💡 ";
+}
+
+#schedule .Pill-item-tag-gameshow {
+  --pill-background: var(--color-5);
+  --pill-color: var(--text-5);
+  --pill-before: "🥊 ";
+}
+
+#schedule .Pill-item-tag-meet-greet {
+  --pill-background: var(--color-6);
+  --pill-color: var(--text-6);
+  --pill-before: "🤝 ";
+}
+
+#schedule .Pill-item-tag-meet-greet .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-social {
+  --pill-background: var(--color-6);
+  --pill-color: var(--text-6);
+  --pill-before: "🗨️ ";
+}
+
+#schedule .Pill-item-tag-social .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-fandom {
+  --pill-background: var(--color-6);
+  --pill-color: var(--text-6);
+  --pill-before: "📣 ";
+}
+
+#schedule .Pill-item-tag-fandom .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-charity {
+  --pill-background: var(--color-6);
+  --pill-color: var(--text-6);
+  --pill-before: "❤️ ";
+}
+
+#schedule .Pill-item-tag-charity .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-tabletop-gaming {
+  --pill-background: var(--color-4);
+  --pill-color: var(--text-4);
+  --pill-before: "🎲 ";
+}
+
+#schedule .Pill-item-tag-tabletop-gaming .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-video-gaming {
+  --pill-background: var(--color-4);
+  --pill-color: var(--text-4);
+  --pill-before: "🎮 ";
+}
+
+#schedule .Pill-item-tag-video-gaming .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-music {
+  --pill-background: var(--color-2);
+  --pill-color: var(--text-2);
+  --pill-before: "🎹 ";
+}
+
+#schedule .Pill-item-tag-dance {
+  --pill-background: var(--color-2);
+  --pill-color: var(--text-2);
+  --pill-before: "🕺 ";
+}
+
+#schedule .Pill-item-tag-nightly-dance {
+  --pill-background: var(--color-2);
+  --pill-color: var(--text-2);
+  --pill-before: "🪩 ";
+}
+
+#schedule .Pill-item-tag-performance {
+  --pill-background: var(--color-8);
+  --pill-color: var(--text-8);
+  --pill-before: "🎭 ";
+}
+
+#schedule .Pill-item-tag-performance .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-puppetry {
+  --pill-background: var(--color-8);
+  --pill-color: var(--text-8);
+  --pill-before: "🧦 ";
+}
+
+#schedule .Pill-item-tag-puppetry .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-fursuiting {
+  --pill-background: var(--color-8);
+  --pill-color: var(--text-8);
+  --pill-before: "🐺 ";
+}
+
+#schedule .Pill-item-tag-fursuiting .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-comedy {
+  --pill-background: var(--color-8);
+  --pill-color: var(--text-8);
+  --pill-before: "🤡 ";
+}
+
+#schedule .Pill-item-tag-comedy .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-cruise {
+  --pill-background: var(--color-7);
+  --pill-color: var(--text-7);
+  --pill-before: "🚢 ";
+}
+
+#schedule .Pill-item-tag-cruise .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-con-event {
+  --pill-background: var(--color-7);
+  --pill-color: var(--text-7);
+  --pill-before: "⭐ ";
+}
+
+#schedule .Pill-item-tag-con-event .Pills-pillBody {
+  text-shadow: #111 1px 1px 3px;
+}
+
+#schedule .Pill-item-tag-loud-sounds {
+  --pill-after: " 🔊";
+}
+
+#schedule .Pill-item-tag-flashing-lights {
+  --pill-after: " 💥";
+}
+
+#schedule .Pill-item-tag-flashing-lights.Pill-item-tag-loud-sounds {
+  --pill-after: " 💥🔊";
+}
+
+#schedule .Pill-item-tag-hand-eye-coordination {
+  --pill-after: " 👋";
+}
+
+#schedule .Pill-item-tag-seating {
+  --pill-background: #555;
+  --pill-color: #fff;
+}
+
+#schedule .GanttView-gantt {
+  --track-background-odd: hsl(220, 24%, 5%);
+  --track-background-even: hsl(220, 24%, 15%);
+  --time-background: hsl(220, 24%, 5%);
+  --track-vertical-width: 2.5rem;
+  --mark-border: #999 dashed 1px;
+}
+
+#schedule .Gantt-bar-id-registration-vip {
+  --bar-color: #e6c271;
+  color: #333333;
+}
+
+#schedule .Gantt-bar-id-registration-hours {
+  --bar-color: var(--color-2);
+}
+
+#schedule .Gantt-bar-id-dealers-room-con-store-hours {
+  --bar-color: var(--color-3);
+}
+
+#schedule .Gantt-bar-id-art-show-hours {
+  --bar-color: var(--color-4);
+  color: #ffffff;
+  text-shadow: #333 -1px 1px 2px;
+}
+
+#schedule .Gantt-bar-id-convention-center-access-hours {
+  --bar-color: var(--color-6);
+}
+
+#schedule .Gantt-bar-id-dlcc-rooftop-hours {
+  --bar-color: var(--color-7);
+}
+
+#schedule .Gantt-bar-id-westin-gaming-room-hours {
+  --bar-color: var(--color-8);
+}
+
+#schedule .Gantt-bar-id-con-ops-hours {
+  --bar-color: var(--color-5);
+  color: #333333;
+}
+
+#schedule .Gantt-bar-id-charity {
+  --bar-color: #882255;
+}
+
+#schedule .Gantt-bar-id-headless-lounge {
+  --bar-color: #117733;
+  color: #ffffff;
+  text-shadow: #333 -1px 1px 2px;
+}
+
+#schedule .Gantt-bar-id-headless-lounge-402-only {
+  --bar-color: #29633c;
+  color: #ffffff;
+  text-shadow: #333 -1px 1px 2px;
+}
+
+#schedule .Gantt-bar-id-exhibitors-row {
+  --bar-color: #332288;
+  color: #ffffff;
+  text-shadow: #333 -1px 1px 2px;
+}
+
+#schedule .Gantt-bar-id-ahf-testing {
+  --bar-color: #785ef0;
+  color: #ffffff;
+  text-shadow: #333 -1px 1px 2px;
+}
